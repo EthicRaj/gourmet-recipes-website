@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gourmet Recipes</h1>
+        <p>Explore the finest recipes for your kitchen adventures</p>
+    </header>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for a recipe...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+
+        <!-- New Recipe Start -->
+        <div class="recipe">
+            <!-- Full Image Above Recipe Content -->
+            <div class="recipe-image">
+                <img src="example-dish3.jpg" alt="Caesar Salad with Anchovies">
+            </div>
+
+            <h2>Caesar Salad with Anchovies</h2>
+
+            <h3>Ingredients</h3>
+            <ul>
+                <li>6 cloves garlic, peeled, divided</li>
+                <li>3/4 cup mayonnaise</li>
+                <li>6 tablespoons grated Parmesan cheese, divided</li>
+                <li>5 anchovy fillets, minced</li>
+                <li>1 tablespoon lemon juice, or more to taste</li>
+                <li>1 teaspoon Worcestershire sauce</li>
+                <li>1 teaspoon Dijon mustard</li>
+                <li>Salt and ground black pepper to taste</li>
+                <li>1/4 cup olive oil</li>
+                <li>4 cups day-old bread, cubed</li>
+                <li>1 head romaine lettuce, torn into bite-sized pieces</li>
+            </ul>
+
+            <h3>Method</h3>
+            <ol>
+                <li><strong>Step 1:</strong> Gather all ingredients.</li>
+                <li><strong>Step 2:</strong> Mince 3 cloves of garlic and place in a small bowl. Add mayonnaise, 2 tablespoons grated Parmesan cheese, anchovies, lemon juice, Worcestershire sauce, and mustard; mix well to combine. Season to taste with salt and black pepper. Refrigerate until ready to use.</li>
+                <li><strong>Step 3:</strong> Heat oil in a large skillet over medium heat. Slice remaining 3 cloves of garlic into quarters and add to hot oil. Cook and stir until brown, then remove garlic from pan. Cook bread cubes in hot flavored oil, turning frequently, until lightly browned; transfer onto a plate and season with salt and pepper.</li>
+                <li><strong>Step 4:</strong> Place lettuce in a large bowl. Add dressing, remaining Parmesan cheese, and seasoned bread cubes; toss well to coat.</li>
+                <li><strong>Step 5:</strong> Serve immediately and enjoy!</li>
+            </ol>
+
+            <h3>Nutrition Facts (per serving)</h3>
+            <ul>
+                <li>Calories: 384</li>
+                <li>Fat: 34g</li>
+                <li>Carbs: 16g</li>
+                <li>Protein: 6g</li>
+            </ul>
+        </div>
+        <!-- New Recipe End -->
+
+        <div class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Get the latest recipes delivered straight to your inbox!</p>
+            <input type="email" placeholder="Enter your email...">
+            <button>Subscribe</button>
+        </div>
+
+        <div class="quiz">
+            <h2>Take Our Cooking Quiz</h2>
+            <p>Find out what recipe you should try next!</p>
+            <button>Start Quiz</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gourmet Recipes | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function searchRecipes() {
+            const searchInput = document.getElementById('search').value;
+            alert('Search functionality coming soon for: ' + searchInput);
+        }
+    </script>
+</body>
+</html>

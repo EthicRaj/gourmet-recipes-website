@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gourmet Recipes</h1>
+        <p>Explore the finest recipes for your kitchen adventures</p>
+    </header>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for a recipe...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+
+        <!-- Updated Recipe Start -->
+        <div class="recipe">
+            <!-- Full Image Above Recipe Content -->
+            <div class="recipe-image">
+                <img src="paneer-butter-masala.jpg" alt="Paneer Butter Masala">
+            </div>
+
+            <h2>Paneer Butter Masala</h2>
+
+            <h3>Ingredients</h3>
+            <ul>
+                <li>½ cup vegetable oil</li>
+                <li>½ pound paneer, cut into 1/2-inch cubes</li>
+                <li>2 tablespoons butter</li>
+                <li>2 onions, finely chopped</li>
+                <li>1 teaspoon ginger paste</li>
+                <li>1 teaspoon garlic paste</li>
+                <li>1 tablespoon ground cashews</li>
+                <li>1 teaspoon ground red chiles</li>
+                <li>½ teaspoon ground cumin</li>
+                <li>½ teaspoon ground coriander</li>
+                <li>½ teaspoon garam masala</li>
+                <li>1 (8 ounce) can tomato sauce</li>
+                <li>½ cup half-and-half</li>
+                <li>½ cup milk</li>
+                <li>½ teaspoon white sugar</li>
+                <li>½ teaspoon salt</li>
+            </ul>
+
+            <h3>Method</h3>
+            <ol>
+                <li>
+                    <strong>Step 1:</strong> Heat oil in a large skillet over medium heat; fry paneer in batches until golden, about 5 minutes. Transfer fried paneer to a paper towel-lined plate to drain, retaining vegetable oil in skillet.
+                </li>
+                <li>
+                    <strong>Step 2:</strong> Melt butter in the same skillet over medium heat; cook and stir onion until golden brown, about 10 minutes. Add ginger paste and garlic paste. Continue to cook until fragrant, about 1 minute more. Stir cashews, ground red chiles, cumin, coriander, and garam masala into the onion mixture. Cook and stir for 1 minute.
+                </li>
+                <li>
+                    <strong>Step 3:</strong> Stir tomato sauce, half-and-half, milk, sugar, and salt into spice mixture; simmer until thickened, about 5 minutes. Reduce heat to low. Add fried paneer and simmer until heated through, about 5 minutes more.
+                </li>
+            </ol>
+
+            <h3>Nutrition Facts (per serving)</h3>
+            <ul>
+                <li>Calories: 469</li>
+                <li>Fat: 41g</li>
+                <li>Carbs: 15g</li>
+                <li>Protein: 11g</li>
+            </ul>
+        </div>
+        <!-- Updated Recipe End -->
+
+        <div class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Get the latest recipes delivered straight to your inbox!</p>
+            <input type="email" placeholder="Enter your email...">
+            <button>Subscribe</button>
+        </div>
+
+        <div class="quiz">
+            <h2>Take Our Cooking Quiz</h2>
+            <p>Find out what recipe you should try next!</p>
+            <button>Start Quiz</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gourmet Recipes | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function searchRecipes() {
+            const searchInput = document.getElementById('search').value;
+            alert('Search functionality coming soon for: ' + searchInput);
+        }
+    </script>
+</body>
+</html>

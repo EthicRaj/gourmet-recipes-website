@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes Quiz Competition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipes Quiz Competition</h1>
+        <p>Test your culinary knowledge and discover fun facts about cooking!</p>
+    </header>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <div class="container">
+        <div class="quiz-section">
+            <h2>Cooking Quiz</h2>
+            <form id="quizForm">
+                <!-- Question 1 -->
+                <div class="quiz-question">
+                    <p><strong>1. What is the main ingredient in a classic Carbonara sauce?</strong></p>
+                    <input type="radio" id="q1a" name="q1" value="A">
+                    <label for="q1a">A. Cream</label><br>
+                    <input type="radio" id="q1b" name="q1" value="B">
+                    <label for="q1b">B. Egg yolks</label><br>
+                    <input type="radio" id="q1c" name="q1" value="C">
+                    <label for="q1c">C. Milk</label><br>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="quiz-question">
+                    <p><strong>2. Which herb is traditionally used in pesto sauce?</strong></p>
+                    <input type="radio" id="q2a" name="q2" value="A">
+                    <label for="q2a">A. Basil</label><br>
+                    <input type="radio" id="q2b" name="q2" value="B">
+                    <label for="q2b">B. Parsley</label><br>
+                    <input type="radio" id="q2c" name="q2" value="C">
+                    <label for="q2c">C. Cilantro</label><br>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="quiz-question">
+                    <p><strong>3. What is the key ingredient in hummus?</strong></p>
+                    <input type="radio" id="q3a" name="q3" value="A">
+                    <label for="q3a">A. Lentils</label><br>
+                    <input type="radio" id="q3b" name="q3" value="B">
+                    <label for="q3b">B. Chickpeas</label><br>
+                    <input type="radio" id="q3c" name="q3" value="C">
+                    <label for="q3c">C. Peanuts</label><br>
+                </div>
+
+                <button type="button" onclick="checkAnswers()">Submit</button>
+            </form>
+        </div>
+
+        <div id="quizResults" class="results" style="display:none;">
+            <h2>Your Results</h2>
+            <p id="resultsMessage"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Recipes Quiz Competition | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "B",
+                q2: "A",
+                q3: "B"
+            };
+
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+
+            for (const [question, answer] of Object.entries(correctAnswers)) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === answer) {
+                    score++;
+                }
+            }
+
+            const resultsMessage = document.getElementById("resultsMessage");
+            const resultsDiv = document.getElementById("quizResults");
+            resultsMessage.textContent = `You scored ${score} out of ${totalQuestions}! ${
+                score === totalQuestions ? "You're a master chef!" : "Keep practicing!"
+            }`;
+            resultsDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>

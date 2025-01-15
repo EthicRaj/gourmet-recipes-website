@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gourmet Recipes</h1>
+        <p>Explore the finest recipes for your kitchen adventures</p>
+    </header>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for a recipe...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+
+        <div class="recipe">
+            <!-- Full Image Above Recipe Content -->
+            <div class="recipe-image">
+                <img src="example-dish1.jpg" alt="Spaghetti Carbonara">
+            </div>
+
+            <h2>Spaghetti Carbonara Recipe</h2>
+
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 tablespoon extra virgin olive oil or unsalted butter</li>
+                <li>1/2 pound pancetta or thick-cut bacon, diced</li>
+                <li>1 to 2 garlic cloves, minced, about 1 teaspoon (optional)</li>
+                <li>3 to 4 whole eggs</li>
+                <li>1 cup grated Parmesan or pecorino cheese</li>
+                <li>1 pound spaghetti (or bucatini or fettuccine)</li>
+                <li>Kosher salt and freshly ground black pepper to taste</li>
+            </ul>
+
+            <h3>Method</h3>
+            <ol>
+                <li>
+                    <strong>Heat the pasta water:</strong>
+                    Put a large pot of salted water on to boil (1 tablespoon salt for every 2 quarts of water).
+                </li>
+                <li>
+                    <strong>Sauté the pancetta or bacon and garlic:</strong>
+                    While the water is coming to a boil, heat the olive oil or butter in a large sauté pan over medium heat. Add the bacon or pancetta and cook slowly until crispy. Add the garlic (if using) and cook another minute, then turn off the heat and put the pancetta and garlic into a large bowl.
+                </li>
+                <li>
+                    <strong>Beat the eggs and half of the cheese:</strong>
+                    In a small bowl, beat the eggs and mix in about half of the cheese.
+                </li>
+                <li>
+                    <strong>Cook the pasta:</strong>
+                    Once the water has reached a rolling boil, add the dry pasta, and cook, uncovered, at a rolling boil.
+                </li>
+                <li>
+                    <strong>Toss the pasta with pancetta or bacon:</strong>
+                    When the pasta is al dente (still a little firm, not mushy), use tongs to move it to the bowl with the bacon and garlic. Let it be dripping wet. Reserve some of the pasta water. Move the pasta from the pot to the bowl quickly, as you want the pasta to be hot. It's the heat of the pasta that will heat the eggs sufficiently to create a creamy sauce. Toss everything to combine, allowing the pasta to cool just enough so that it doesn't make the eggs curdle when you mix them in. (That's the tricky part.)
+                </li>
+                <li>
+                    <strong>Add the beaten egg mixture:</strong>
+                    Add the beaten eggs with cheese and toss quickly to combine once more. Add salt to taste. Add some pasta water back to the pasta to keep it from drying out.
+                </li>
+            </ol>
+        </div>
+
+        <div class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Get the latest recipes delivered straight to your inbox!</p>
+            <input type="email" placeholder="Enter your email...">
+            <button>Subscribe</button>
+        </div>
+
+        <div class="quiz">
+            <h2>Take Our Cooking Quiz</h2>
+            <p>Find out what recipe you should try next!</p>
+            <button>Start Quiz</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gourmet Recipes | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function searchRecipes() {
+            const searchInput = document.getElementById('search').value;
+            alert('Search functionality coming soon for: ' + searchInput);
+        }
+    </script>
+</body>
+</html>

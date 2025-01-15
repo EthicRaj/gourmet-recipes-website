@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gourmet Recipes</h1>
+        <p>Explore the finest recipes for your kitchen adventures</p>
+    </header>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for a recipe...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+
+        <!-- New Recipe Start -->
+        <div class="recipe">
+            <!-- Full Image Above Recipe Content -->
+            <div class="recipe-image">
+                <img src="example-dish2.jpg" alt="Pizza Margherita">
+            </div>
+
+            <h2>Pizza Margherita</h2>
+
+            <h3>Ingredients</h3>
+            <ul>
+                <li>3 ½ cups all-purpose flour</li>
+                <li>1 teaspoon salt</li>
+                <li>1 cup water</li>
+                <li>1 (.25 ounce) package active dry yeast</li>
+                <li>1 pinch white sugar</li>
+                <li>¼ cup flour for dusting</li>
+                <li>2 cups pizza sauce</li>
+                <li>20 slices fresh mozzarella cheese</li>
+                <li>20 leaves fresh basil</li>
+                <li>Olive oil</li>
+                <li>Sea salt to taste</li>
+            </ul>
+
+            <h3>Method</h3>
+            <ol>
+                <li><strong>Step 1:</strong> Stir flour and 1 teaspoon salt in a bowl. Set aside.</li>
+                <li><strong>Step 2:</strong> Mix water, yeast, and sugar in a large bowl. Let stand until yeast begins to form a creamy foam, about 5 minutes.</li>
+                <li><strong>Step 3:</strong> Stir half the flour mixture into yeast mixture until no dry spots remain. Stir in remaining flour, 1/2 cup at a time, mixing well after each addition. When dough pulls together, turn it out onto a lightly floured surface and knead until smooth and elastic, about 8 minutes.</li>
+                <li><strong>Step 4:</strong> Lightly oil a large bowl, then place dough in the bowl and turn to coat with oil. Cover with a light cloth and let rise in a warm place (80 to 95 degrees F (27 to 35 degrees C)) until doubled in volume, about 1 hour. Punch dough down, divide into 4 equal pieces, and form each into a ball.</li>
+                <li><strong>Step 5:</strong> Preheat oven with a pizza stone to 500 degrees F (260 degrees C).</li>
+                <li><strong>Step 6:</strong> Stretch out and pat 1 dough ball to form a circle 10 to 12 inches in diameter. Place dough on a lightly floured pizza peel. Top with 1/2 cup of tomato sauce and spread to cover within an inch of the edge of the dough. Arrange 5 slices of mozzarella cheese on top of the tomato sauce, then place 5 basil leaves on top. Drizzle pizza with 1 tablespoon olive oil and sprinkle with sea salt to taste. Repeat for 3 remaining dough balls.</li>
+                <li><strong>Step 7:</strong> Slide each pizza onto the pizza stone in the preheated oven. Bake until cheese is bubbly and the underside of the crust is golden brown, 5 to 7 minutes.</li>
+            </ol>
+
+            <h3>Nutrition Facts (per serving)</h3>
+            <ul>
+                <li>Calories: 966</li>
+                <li>Fat: 37g</li>
+                <li>Carbs: 106g</li>
+                <li>Protein: 49g</li>
+            </ul>
+        </div>
+        <!-- New Recipe End -->
+
+        <div class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Get the latest recipes delivered straight to your inbox!</p>
+            <input type="email" placeholder="Enter your email...">
+            <button>Subscribe</button>
+        </div>
+
+        <div class="quiz">
+            <h2>Take Our Cooking Quiz</h2>
+            <p>Find out what recipe you should try next!</p>
+            <button>Start Quiz</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gourmet Recipes | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function searchRecipes() {
+            const searchInput = document.getElementById('search').value;
+            alert('Search functionality coming soon for: ' + searchInput);
+        }
+    </script>
+</body>
+</html>
